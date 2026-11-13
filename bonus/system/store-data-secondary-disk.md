@@ -229,7 +229,7 @@ Replace `<yourUUID>` with your `UUID` obtained before
 sudo mkdir /data
 ```
 
-* Assing to the `admin` user as the owner of the **`/data`** folder
+* Assign to the `admin` user as the owner of the **`/data`** folder
 
 ```sh
 sudo chown admin:admin /data
