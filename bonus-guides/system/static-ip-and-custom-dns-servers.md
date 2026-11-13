@@ -32,7 +32,7 @@ The router reserves the IP address of the device for a time after going out, but
 {% hint style="danger" %}
 **Be careful by setting this!** If you change the router, it could be that the new router doesn't work in the same IP address range as the old router, the device won't be registered on the local network, and will be completely out of the connection.
 
-💡 To avoid this, you will need to **enable the "Automatic (DHCP)" mode before changing the router**, following the [Set the DCHP (automatic) configuration (by command line) section](static-ip-and-custom-dns-servers.md#set-the-automatic-dhcp-mode-configuration-by-command-line) to ensure that the DHCP server auto assigns an IP to the node in the range you are working on, and if you want, after router change, reconfigure the static IP address again following the [Option 2](static-ip-and-custom-dns-servers.md#option-2-after-ubuntu-server-installation-by-command-line) of this guide.
+💡 To avoid this, you will need to **enable the "Automatic (DHCP)" mode before changing the router**, following the [Set the DHCP (automatic) configuration (by command line) section](static-ip-and-custom-dns-servers.md#set-the-automatic-dhcp-mode-configuration-by-command-line) to ensure that the DHCP server auto assigns an IP to the node in the range you are working on, and if you want, after router change, reconfigure the static IP address again following the [Option 2](static-ip-and-custom-dns-servers.md#option-2-after-ubuntu-server-installation-by-command-line) of this guide.
 
 If you don't do this, you will have to attach the monitor screen or television and keyboard to fix this.
 {% endhint %}
