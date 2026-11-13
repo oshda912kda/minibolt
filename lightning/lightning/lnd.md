@@ -1506,7 +1506,7 @@ Replace:
 
 > `<true>` / `<false>` depending if you want to open a private or public channel. **Optional**: if you want to open a public channel, you can delete this parameter. Default is `false`
 
-> `bc1p...` with the desired close adresss. **Optional**: if this parameter is not specified, LND will choose an address in its own onchain wallet.
+> `bc1p...` with the desired close address. **Optional**: if this parameter is not specified, LND will choose an address in its own onchain wallet.
 {% endhint %}
 
 **Example** of a completed command that opens **2 channels**: one private and one public, each with a capacity of 500.000 sats, using an opening fee of 1 sat/vbyte, and specifying a closing address for the private channel:
@@ -1681,7 +1681,7 @@ Replace:
 {% hint style="info" %}
 Replace:
 
-> `<peer_node_public_key>`: public key of yout peer node, ask to your peer about this information obtained with `lncli getinfo | grep -A2 '"uris":'` command
+> `<peer_node_public_key>`: public key of your peer node, ask to your peer about this information obtained with `lncli getinfo | grep -A2 '"uris":'` command
 >
 > `<amount_in_sats>`: desired channel capacity, e.g 1000000 sats
 {% endhint %}
@@ -1729,7 +1729,7 @@ Keep the terminal open and go to [Sparrow wallet](../../bitcoin/bitcoin/sparrow.
 >
 > > `<amount>`: \<exact\_amount\_in\_sats> (in the previous example expected output: 1000000[^21])
 >
-> > `<fee>`: free selection (minimun reccomended: 1 sat/vB)
+> > `<fee>`: free selection (minimum reccomended: 1 sat/vB)
 
 <figure><img src="../../.gitbook/assets/sparrow_external_funding_1.png" alt="" width="563"><figcaption></figcaption></figure>
 
