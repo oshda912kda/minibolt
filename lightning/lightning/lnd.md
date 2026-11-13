@@ -1350,7 +1350,7 @@ Ensure you still have your node in the same situation before the migration using
 
 #### **(Optional)** Delete old bbolt files database
 
-* With user `admin`, detele the old bbolt database files
+* With user `admin`, delete the old bbolt database files
 
 {% code overflow="wrap" %}
 ```bash
@@ -2195,7 +2195,8 @@ sudo rm /usr/local/bin/lnd && sudo rm /usr/local/bin/lncli
 
 [^9]: The maximum percentage of total funds that can be allocated to a channel's commitment fee. This only applies for the initiator of the channel. Valid values are within \[0.1, 1]. **Uncomment and adjust to your criteria** (default 0.5)
 
-[^10]: The strategy to use for selecting coins for wallet transactions. When performing in a high fee environment, these settings may help reduce the overall burden. Instead of selecting UTXOs at random, you may instruct LND to choose the largest UTXOs instead, reducing the potential number of signatures required. This may require a manual consolidation of UTXOs when fees have subsided. Options are    &#x20;'largest' and 'random'. (default: random)
+[^10]: The strategy to use for selecting coins for wallet transactions. When performing in a high fee environment, these settings may help reduce the overall burden. Instead of selecting UTXOs at random, you may instruct LND to choose the largest UTXOs instead, reducing the potential number of signatures required. This may require a manual consolidation of UTXOs when fees have subsided. Options are
+    &#x20;'largest' and 'random'. (default: random)
 
 [^11]: Set this to 144, allows you up to 24h to resolve issues related to your node before HTLCs are resolved on chain. Allowing for fewer HTLCs per channel can mitigate the potential fallout of a force closure, but can also cause the channel to be unusable when all HTLC slots are used up. **Adjust to your convenience** (default 80)
 
@@ -2203,9 +2204,13 @@ sudo rm /usr/local/bin/lnd && sudo rm /usr/local/bin/lncli
 
 [^13]: Setting the fee estimate mode to ECONOMICAL and increasing the target confirmations for onchain transactions can also help save on fees, but with the risk that some transactions may not confirm in time, requiring more manual monitoring and eventual intervention. **Uncomment and customize the value** (default: CONSERVATIVE)
 
-[^14]: The max fee rate in sat/vb which can be used when sweeping funds. Setting    &#x20;this value too low can result in transactions not being confirmed in time,    &#x20;causing HTLCs to expire hence potentially losing funds. **Uncomment and adjust to your criteria** (default: 1000)
+[^14]: The max fee rate in sat/vb which can be used when sweeping funds. Setting
+    &#x20;this value too low can result in transactions not being confirmed in time,
+    &#x20;causing HTLCs to expire hence potentially losing funds. **Uncomment and adjust to your criteria** (default: 1000)
 
-[^15]: The conf target to use when sweeping non-time-sensitive outputs. This is    &#x20;useful for sweeping outputs that are not time-sensitive, and can be swept at    &#x20;a lower fee rate. **Uncomment and adjust to your criteria** (default: 1008)
+[^15]: The conf target to use when sweeping non-time-sensitive outputs. This is
+    &#x20;useful for sweeping outputs that are not time-sensitive, and can be swept at
+    &#x20;a lower fee rate. **Uncomment and adjust to your criteria** (default: 1008)
 
 [^16]: Symbolic link
 
